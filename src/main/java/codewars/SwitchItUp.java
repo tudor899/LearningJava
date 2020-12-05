@@ -1,6 +1,12 @@
 package codewars;
 
 public class SwitchItUp {
+
+    public static void main(String[] test){
+        String numar = switchItUp(7);
+        System.out.println(numar);
+    }
+
     public static String switchItUp(int number) {
         switch (number) {
             case 0:
