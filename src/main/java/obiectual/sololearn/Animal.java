@@ -1,9 +1,16 @@
 package obiectual.sololearn;
 
-class Animal {
+import obiectual.sololearn.abstractization.InterfaceAnimal;
+
+class Animal implements InterfaceAnimal {
     protected int legs;
     public void eat() {
         System.out.println(Animal.class.getSimpleName() + " eats and it has " + legs + " legs");
+    }
+
+    @Override
+    public void doSomething() {
+        System.out.println("I have implemented all the methods in the interface");
     }
 }
 
