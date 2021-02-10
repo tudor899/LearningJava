@@ -26,6 +26,6 @@ public class PunctDeStart {
         System.out.println(numeCaine);
 
         // printam varsta animalului
-        System.out.println(rex.age);
+        System.out.println(rex.getAge());
     }
 }

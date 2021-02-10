@@ -1,4 +1,4 @@
-package obiectual.sololearn;
+package obiectual.sololearn.encapsulation;
 
 import obiectual.sololearn.abstractization.InterfaceAnimal;
 
