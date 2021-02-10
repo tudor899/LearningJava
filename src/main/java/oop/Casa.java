@@ -11,8 +11,6 @@ public class Casa {
     Adresa adresaMea;
     private int nrCasa;
 
-
-
     // constructorul default
     public Casa(){
 

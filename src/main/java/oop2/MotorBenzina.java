@@ -8,7 +8,7 @@ public class MotorBenzina extends Motor {
     public MotorBenzina(int consum, int caiPutere){
         this.consum = consum;
         this.caiPutere = caiPutere;
-        tipCombustibil = "Benzina";
+        tipCombustibil = TipCombustibil.BENZINA;
 
     }
 

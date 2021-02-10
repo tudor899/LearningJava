@@ -12,7 +12,7 @@ class Program {
         animals[0] = a;
         animals[1] = b;
         animals[2] = c;
-        //animals[3] = vehicle;
+        animals[3] = new Dog();
 
         /*for(Animal animal : animals){
             animal.makeSound();
