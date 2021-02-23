@@ -1,5 +1,7 @@
 package oop3;
 
+import java.util.Objects;
+
 public class Persoana {
     private String nume;
     private String prenume;
@@ -25,6 +27,14 @@ public class Persoana {
         this.nume = nume;
         this.prenume = prenume;
         this.varsta = varsta;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Persoana)) return false;
+        Persoana persoana = (Persoana) o;
+        return varsta == persoana.varsta && nume.equals(persoana.nume) && prenume.equals(persoana.prenume);
     }
 }
 

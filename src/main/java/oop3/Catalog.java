@@ -1,22 +1,34 @@
 package oop3;
 
-public class Catalog extends Student{
-    private int[] note;
+import java.util.List;
+import java.util.Map;
+
+public class Catalog {
+    private List<Student> students;
+
+    public void puneNotaInCatalog(Profesor profesor, Student student, int nota) {
+        Materie materiePredata = profesor.getMaterie();
+        Student studentCautat = null;
+
+        for (Student studentCrt : students) {
+            if (studentCrt.equals(student)) {
+                studentCautat = studentCrt;
+            }
+        }
+
+        List<Integer> notePrimite = studentCautat.getMaterieNotaMap().get(materiePredata);
+        notePrimite.add(nota);
+    }
 
 
-public Catalog(){
+    public Catalog(List<Student> students) {
+        this.students = students;
+    }
+
+    public List<Student> getStudents() {
+        return students;
+    }
 }
 
-public int[] getNote(int[] note){return note;}
-
-public Catalog(String nume, String prenume, String materie, int note){
-    super(nume,prenume,materie);
-    getNote(note);
-
-
-}
  /*public int getAnulFabricatiei(){return anulFabricatiei;}
     public void setNrUsi(int nrUsi){this.nrUsi = nrUsi;}*/
-
-
-}

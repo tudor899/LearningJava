@@ -1,15 +1,15 @@
 package oop3;
 
 public class Profesor extends Persoana{
-    private Facultati facultate;
+    private Materie materie;
 
     public Profesor(){}
 
-    public Facultati getFacultate(){return facultate;}
+    public Materie getMaterie(){return materie;}
 
-    public Profesor(String nume, String prenume, int varsta, Facultati facultate){
+    public Profesor(String nume, String prenume, int varsta, Materie materie){
         super(nume, prenume, varsta);
-        this.facultate = facultate;
+        this.materie = materie;
     }
 
 

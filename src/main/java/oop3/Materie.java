@@ -1,6 +1,6 @@
 package oop3;
 
-public enum Facultati {
+public enum Materie {
     DREPT,
     INFORMATICA,
     MEDICINA,
