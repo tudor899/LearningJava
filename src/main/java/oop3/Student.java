@@ -45,6 +45,16 @@ public class Student extends Persoana {
         materieNotaMap.put(materie, new ArrayList<>());
     }
 
+    public Student(String nume, String prenume, int varsta, Set<Materie> materii, int an) {
+        super(nume, prenume, varsta);
+        this.an = an;
+
+        for (Materie materieCrt : materii) {
+            materieNotaMap.put(materieCrt, new ArrayList<>());
+        }
+
+    }
+
     @Override
     public boolean equals(Object o) {
         Student student = (Student) o;

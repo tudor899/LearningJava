@@ -9,6 +9,7 @@ public class MainOOP {
     public static void main(String[] args) {
         Persoana tudor = new Persoana("Tudor", "Marcus", 31);
         Profesor ionescu = new Profesor("Ionescu", "Dan", 17, Materie.MEDICINA);
+        Profesor prof2 = new Profesor("Popescu", "Dan", 17, Materie.INFORMATICA);
 
         Student marius = new Student("Moldovan", "Marius", 16, Materie.MEDICINA, 2);
 
@@ -20,6 +21,8 @@ public class MainOOP {
         catalog.puneNotaInCatalog(ionescu, marius, 8);
         catalog.puneNotaInCatalog(ionescu, marius, 9);
         catalog.puneNotaInCatalog(ionescu, marius, 10);
+
+        catalog.puneNotaInCatalog(prof2, marius, 10);
 
         students = catalog.getStudents();
 
