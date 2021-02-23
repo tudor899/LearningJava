@@ -3,14 +3,21 @@ package oop2;
 
 public class Masina {
     Motor motor;
-    int anulFabricatiei;
-    int pret;
-    boolean isNew;
-    int nrUsi;
+    private int anulFabricatiei;
+    private int pret;
+    private boolean isNew;
+    private int nrUsi;
+
 
     public Masina() {
     }
 
+    public int getAnulFabricatiei(){return anulFabricatiei;}
+    public int getPret(){return pret;}
+    public boolean getIsNew(){return isNew;}
+    public int getNrUsi(){return nrUsi;}
+    public void setNrUsi(int nrUsi){this.nrUsi = nrUsi;}
+    public void setIsNew(boolean isNew){this.isNew = isNew;}
     public Masina(int anulFabricatiei, int pret, int nrUsi, boolean isNew, Motor motor) {
         this.anulFabricatiei = anulFabricatiei;
         this.pret = pret;
