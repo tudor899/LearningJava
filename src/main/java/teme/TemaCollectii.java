@@ -12,6 +12,7 @@ public class TemaCollectii {
        4. cate duplicate sunt in lista
        5. Cate numere divizibile cu 2 ai in lista
        6. Verifica daca lista e palindrom (1,1,2,2,1,1) - e palindrom - extra
+       7. + o problema de pe code wars
 
      */
 
